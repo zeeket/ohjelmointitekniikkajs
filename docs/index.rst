@@ -6,6 +6,8 @@
 Tervetuloa JavaScript Dokumentaatioon!
 ====================================================
 
+Emil Heliste, Henri Helanen, Samu Tatti
+
 .. toctree::
    :maxdepth: 2
    :caption: Sisällysluettelo:
