@@ -12,8 +12,8 @@ Emil Heliste, Henri Helanen, Samu Tatti
    :maxdepth: 2
    :caption: Sisällysluettelo:
 
-   testisivu
    tyyppiTurvallisuus
+   algoritmitJaFunktiot
    
 Luettelot
 ==================
