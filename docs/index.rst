@@ -14,8 +14,13 @@ Emil Heliste, Henri Helanen, Samu Tatti
 
    tyyppiTurvallisuus
    algoritmitJaFunktiot
+<<<<<<< HEAD
    sulkeumat
 
+=======
+   Oliot
+   
+>>>>>>> f6c59a0b88e365933a86c8e1f0aea8cf284d8efd
 Luettelot
 ==================
 
