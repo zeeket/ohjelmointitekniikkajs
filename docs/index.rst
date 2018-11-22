@@ -14,6 +14,7 @@ Emil Heliste, Henri Helanen, Samu Tatti
 
    tyyppiTurvallisuus
    algoritmitJaFunktiot
+   Oliot
    
 Luettelot
 ==================
