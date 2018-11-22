@@ -7,7 +7,7 @@ Olion luominen voi javaScriptissä tapahtua monella eri tavalla. Yksinkertaisin 
 
   let olio = {kenttä: "123"};
 
-Olioliteraalin luominen on helppoa, mutta se ei välttämättä sovi tilanteeseen jossa olioille halutaan enemmän rakennetta. Tällaisiin tilanteisiin sopiva ja muutenkin hyvä periaate olion luontiin on käyttää konstruktori funktiota. Konstruktori antaa raamit olioiden rakentamiseen ja mikä parasta, konstruktorinavulla voidaan luoda toiminnallisuutta joka on jokaisen sen ilmentymän käytössä::
+Olioliteraalin luominen on helppoa, mutta se ei välttämättä sovi tilanteeseen jossa olioille halutaan enemmän rakennetta. Tällaisiin tilanteisiin sopiva ja muutenkin hyvä periaate olion luontiin on käyttää konstruktori funktiota. Konstruktori antaa raamit olioiden rakentamiseen ja mikä parasta, konstruktorin avulla voidaan luoda toiminnallisuutta joka on jokaisen sen ilmentymän käytössä::
 
   function Apina(a,b) {
     this.nimi = a,
@@ -31,7 +31,7 @@ Olioliteraalin luominen on helppoa, mutta se ei välttämättä sovi tilanteesee
 
 Esimerkkikoodissa on muuttujaan "apina" käytetty tarkoituksella const määrettä. Kyseisen määreen käyttö estää koodissa muuttujan "apina" uudelleen alustamisen. JS:n on tarkoitus olla joustavaa ja dynaamista, mutta mikäli muuttujaa ei tulla alustamaan uudestaan on const-määreen käyttö hyvä varotoimi. Vaikka se estää muuttujan alustuksen, on sen kenttiä vielä mahdollista poistaa, lisätä ja muokata. Näin ollen se ei riko JS:n perus ajatusta ja saattaa samalla säästää muutamalta virhetoiminnolta.
  
-Kieli tarjoaa myös paljon muita tapoja olioiden luomiseen, kuten class määreen käyttö ja tyhjän olion täyttö halutuilla kentillä. Konstruktori funktion käyttö on kuitenkin mielestäni selkein tapa luoda olioita javaScriptissä.
+Kieli tarjoaa myös muita tapoja olioiden luomiseen, kuten class määreen käyttö(käytännössä sama kuin konstruktorifunnktion käyttö) ja tyhjän olion täyttö halutuilla kentillä. Konstruktori funktion käyttö on kuitenkin mielestäni selkein tapa luoda olioita javaScriptissä.
 
 
 Käyttö
