@@ -14,7 +14,8 @@ Emil Heliste, Henri Helanen, Samu Tatti
 
    tyyppiTurvallisuus
    algoritmitJaFunktiot
-   
+   sulkeumat
+
 Luettelot
 ==================
 
