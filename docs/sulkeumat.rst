@@ -8,7 +8,7 @@ Yleensä kun missä tahansa ohjelmointikielessä luodaan funktio, funktiolle ann
 Sulkeumaan suljetut vapaat muuttujat säilyvät sulkeuman suorituksen jälkeiseen aikaan
 --------------------------------------------------------------------------------------
 
-Vapaat muuttujat ovat muuttujia joita ei ole paikallisesti määritelty, eikä annettu funktiolle parametrinä. Seuraavassa esimerkissä nähdään myös miten globaali näkyvyysalue ei näe funktion sillä olevaan paikalliseen näkyvyysalueeseen.::
+Vapaat muuttujat ovat muuttujia joita ei ole paikallisesti määritelty, eikä annettu funktiolle parametrinä. Seuraavassa esimerkissä nähdään myös miten globaali näkyvyysalue ei näe funks�llä olevaan paikalliseen näkyvyysalueeseen.::
 
    var lisaa = (function () {
       var laskuri= 0;
@@ -27,11 +27,11 @@ Sulkeumaan suljetuttujen vapaiden muuttujien määritellyt funktio päättyy, mu
 Seuraavassa esimerkissä matalaHuutaja() ja kovaHuutaja() ovat kummatkin sulkeumia. teeHuutaja() luo funktioita jotka lisäävät halutun määrän huutomerkkejä huutoon- se tapahtuu ensin vaihtamalla kuinkaPaljon nimisen muuttuajan arvoa jonka jälkeen  oikea määrä huutomerkkejä tallentuu sulkeumaan ja jää sellaisenaan funktion assosiaatiolistaan vaikka lisää huutajia luodaan.::
 
     function teeHuutaja(){
-    var huutomerkit = "!".repeat(kuinkaPaljon);
-    return function(mitaHuutaa) {
-    var huudettava=mitaHuutaa.toUpperCase();
-    return huudettava+huutomerkit;
-    }
+        var huutomerkit = "!".repeat(kuinkaPaljon);
+        return function(mitaHuutaa) {
+              var huudettava=mitaHuutaa.toUpperCase();
+              return huudettava+huutomerkit;
+        }
     }
 
     var kuinkaPaljon = 1;
@@ -48,7 +48,7 @@ Seuraavassa esimerkissä matalaHuutaja() ja kovaHuutaja() ovat kummatkin sulkeum
 Sulkeumat käytännössä
 -------------------------------------
 
-Esimerkiksi jos halutaan tehdä jotain jokaisella taulukon indeksillä, mutta ei haluta muutta alkuperäistä taulukkoa.:: 
+Esimerkiksi jos halutaan suorittaa funktio jokaisella taulukon indeksillä, mutta ei haluta tärvellä alkuperäistä taulukkoa.:: 
 
    var taulukko = [{data:"voi"},{data:"ei"}];
 
@@ -62,6 +62,6 @@ Esimerkiksi jos halutaan tehdä jotain jokaisella taulukon indeksillä, mutta ei
    });
 
    for(var i=0;i<taulukko.length;i++){
-      alert(taulukko[i].data);
+      alert(taulukko[i].data); //alkuperäiset voi ja ei
    }
 
