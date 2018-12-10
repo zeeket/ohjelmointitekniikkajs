@@ -14,7 +14,7 @@ luonteesta ja ominaisuuksista. Pyrimme tarjoamaan sekä kattavia, että ytimekk�
 koodiesimerkkejä.
 
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 1
    :caption: Sisällysluettelo:
 
    tyyppiTurvallisuus
