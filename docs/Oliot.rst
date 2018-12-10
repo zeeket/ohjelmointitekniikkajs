@@ -31,7 +31,7 @@ Olioliteraalin luominen on helppoa, mutta se ei välttämättä sovi tilanteesee
 
 Esimerkkikoodissa on muuttujaan "apina" käytetty tarkoituksella const määrettä. Kyseisen määreen käyttö estää koodissa muuttujan "apina" uudelleen alustamisen. JS:n on tarkoitus olla joustavaa ja dynaamista, mutta mikäli muuttujaa ei tulla alustamaan uudestaan on const-määreen käyttö hyvä varotoimi. Vaikka se estää muuttujan alustuksen, on sen kenttiä vielä mahdollista poistaa, lisätä ja muokata. Näin ollen se ei riko JS:n perus ajatusta ja saattaa samalla säästää muutamalta virhetoiminnolta.
  
-Kieli tarjoaa myös muita tapoja olioiden luomiseen, kuten class määreen käyttö(käytännössä sama kuin konstruktorifunnktion käyttö) ja tyhjän olion täyttö halutuilla kentillä. Konstruktori funktion käyttö on kuitenkin mielestäni selkein tapa luoda olioita javaScriptissä.
+Kieli tarjoaa myös muita tapoja olioiden luomiseen. Olioiden luonti voi tapahtua myös class määrettä käyttämällä (käytännössä sama kuin konstruktorifunnktion käyttö) ja tyhjän olion täytöllä. Konstruktori funktion käyttö on kuitenkin mielestämme selkein tapa luoda olioita javaScriptissä.
 
 
 Käyttö
@@ -65,4 +65,4 @@ Dynaaminen kenttien muuttelu, poisto ja lisäys eivät aina ole välttämättä 
 Class VS Perinteinen
 ---------------------
 
-Olioiden luontia käsittelevässä osassa tuli jo mainittua että JS:stä löytyy periaatteessa java tyylinen class toiminnallisuus. Class ei oikeastaan tuo mukanaan mitään uutta, vaan käyttää javaScriptissä jo olemassa olevia työkaluja class toiminnallisuuden simuloimiseen. Tästä syystä on suositeltavaa, niin ikävältä kun se aluksi tuntuukin, opetella käyttämään JS:n perinteisiä työkaluja olioiden luonnissa. Tämä pakottaa ohjelmoijan perehtymään kielen rakenteisiin, jotka ovat javaScriptin osaamisen kannalta on erittäin oleellista. Vaikka class:in käyttö ei sinänsä ole huonompi ratkaisu, tuntuu että javaScript menettää hieman merkityksensä jos kieltä lähdetään pakottamaan takaisin kankeampaan muotoonsa.
+Olioiden luontia käsittelevässä osassa tuli jo mainittua että JS:stä löytyy periaatteessa java tyylinen class toiminnallisuus. Class ei oikeastaan tuo mukanaan mitään uutta, vaan käyttää javaScriptissä jo olemassa olevia työkaluja class toiminnallisuuden simuloimiseen. Tästä syystä on suositeltavaa, niin ikävältä kun se aluksi tuntuukin, opetella käyttämään JS:n perinteisiä työkaluja olioiden luonnissa. Tämä pakottaa ohjelmoijan perehtymään kielen rakenteisiin, jotka ovat javaScriptin osaamisen kannalta on erittäin oleellista. Vaikka class:in käyttö ei sinänsä ole huonompi ratkaisu, tuntuu että javaScript menettää hieman merkityksensä jos kieltä lähdetään pakottamaan takaisin kankeampaan muotoon.
