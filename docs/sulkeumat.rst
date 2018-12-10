@@ -4,12 +4,12 @@ Sulkeumat
 Sulkeumat ovat funktioita jotka säilyttävät tietoa. Sulkeumat mahdollistavat sellaisten muuttujien piilottamisen joita ei tarvita juuri tietyssä kohdassa ohjelman suoritusta.  
 Yleensä kun missä tahansa ohjelmointikielessä luodaan funktio, funktiolle annetaan joko parametrejä tai funktioon määritellään jonkinlaisia sisäisiä arvoja. JavaScriptissä sulkeuman saa helpoiten käyttämällä funktiota funktion sisällä ja suljuttamalla halutut muuttujat ensimmäiseen funktioon. **Tärkeää:** JavaScriptissä sisäisillä funtioilla on näkyvyys funktion ulkoiseen viittausympäristöön. Toisinsanoen sisältä nähdään ulos, muttei päinvastoin. Lohkot eivät myöskään ole näkyvyysalueita JavaScriptissä, toisin kuin Javassa. 
 
+Sulkeuma säilyttää suorituksen jälkeiseen aikaan
+--------------------------------------------------------------------------------------
 
-Sulkeumaan suljetut vapaat muuttujat säilyvät sulkeuman suorituksen jälkeiseen aikaan
-----------------------------------------------------------------------------------------
+Vapaat muuttujat ovat muuttujia joita ei ole paikallisesti määritelty, eikä annettu funktiolle parametrinä. Seuraavassa esimerkissä nähdään miten sulkeumaan suljetut vapaat muuttujat säilyvät sulkeuman suorituksen jälkeiseen aikaan, sekä miten globaali näkyvyysalue ei näe funktion sillä olevaan paikalliseen näkyvyysalueeseen.
 
-Vapaat muuttujat ovat muuttujia joita ei ole paikallisesti määritelty, eikä annettu funktiolle parametrinä. Seuraavassa esierkissä nähdään myös miten globaali näkyvyysalue ei näe sisäisen funktion paikalliseen näkyvyysalueeseen.::
-
+::
    var lisaa = (function () {
       var laskuri= 0;
       return function () {laskuri+=1;return laskuri}
@@ -22,16 +22,16 @@ Vapaat muuttujat ovat muuttujia joita ei ole paikallisesti määritelty, eikä a
    write(lisaa()); //tulostuu 3
 
 
-Sulkeumaan suljetuttujen vapaiden muuttujien määritellyt funktio päättyy, mutta sulkeuma säilyy
---------------------------------------------------------------------------------------------------
-Seuraavassa esimerkissä matalaHuutaja() ja kovaHuutaja() ovat kummatkin sulkeumia. teeHuutaja() luo funktioita jotka lisäävät halutun määrän huutomerkkejä huutoon- se tapahtuu ensin vaihtamalla kuinkaPaljon nimisen muuttuajan arvoa jonka jälkeen  oikea määrä huutomerkkejä tallentuu sulkeumaan ja jää sellaisenaan funktion assosiaatiolistaan vaikka lisää huutajia luodaan.::
+------------------------------------------------------------------------------------------------
+Sulkeumaan suljetuttujen vapaiden muuttujien määritellyt funktio voi päättyä, mutta sulkeuma säilyy. Seuraavassa esimerkissä matalaHuutaja() ja kovaHuutaja() ovat kummatkin sulkeumia. teeHuutaja() luo funktioita jotka lisäävät halutun määrän huutomerkkejä huutoon- se tapahtuu ensin vaihtamalla kuinkaPaljon nimisen muuttuajan arvoa jonka jälkeen  oikea määrä huutomerkkejä tallentuu sulkeumaan ja jää sellaisenaan funktion assosiaatiolistaan vaikka lisää huutajia luodaan.
 
+::
     function teeHuutaja(){
     var huutomerkit = "!".repeat(kuinkaPaljon);
     return function(mitaHuutaa) {
-    var huudettava=mitaHuutaa.toUpperCase();
-    return huudettava+huutomerkit;
-    }
+      var huudettava=mitaHuutaa.toUpperCase();
+      return huudettava+huutomerkit;
+      }
     }
 
     var kuinkaPaljon = 1;
@@ -48,7 +48,7 @@ Seuraavassa esimerkissä matalaHuutaja() ja kovaHuutaja() ovat kummatkin sulkeum
 Sulkeumat käytännössä
 -------------------------------------
 
-Esimerkiksi jos halutaan tehdä jotain jokaisella taulukon indeksillä, mutta ei haluta muuttaa alkuperäistä taulukkoa.:: 
+Esimerkiksi jos halutaan tehdä jotain jokaisella taulukon indeksillä, mutta ei haluta muutta alkuperäistä taulukkoa.:: 
 
    var taulukko = [{data:"voi"},{data:"ei"}];
 
@@ -62,6 +62,6 @@ Esimerkiksi jos halutaan tehdä jotain jokaisella taulukon indeksillä, mutta ei
    });
 
    for(var i=0;i<taulukko.length;i++){
-      alert(taulukko[i].data);
+      write(taulukko[i].data);
    }
 
