@@ -53,7 +53,7 @@ Tässä testissä huomataan, että hyvin pienellä testidatalla (5 alkiota) kiel
 Tämä todennäköisesti natiivin reduce-funktion raskaudesta, joka tulee ilmi pienellä testidatalla. Toisaalta natiivissa reduce-funktiossa on toteutettu jotain
 optimointeja, joka nopeuttaa taulukon läpikäyntiä suurella testidatalla.
 
-Tämä onkin erittäin hyvä syy käyttää muuttujien, parametrien ja funktioiden tyypittömyyttä hyväksi. JavaScriptin tyypittömyys luo erittäin hyvät työkalut toteuttaa yleispäteviä algoritmejä ja funktioita, joita voidaan koodissa uudelleenkäyttää helposti. Esimerkiksi voidaan luoda funktio, joka järjestää erityyppisten alkioiden taulukon järjestykseen vaikka niin, että ensin tulee numerot pienimmästä suurimpaan ja sitten merkkijonot aakkosjärjestyksessä. Tämän tyylisten apufunktioiden luominen on yleistä JavaScriptissä, ja sitä pitäisi käyttää hyödykseen yhä enemmän.
+Testeistä huomataan, että silmukan läpikäynti on huomattvasti hitaampaa, kuin muissa laajasti käytetyissä ohjelmointikielissä. Tämä onkin erittäin hyvä syy käyttää muuttujien, parametrien ja funktioiden tyypittömyyttä hyväksi. JavaScriptin tyypittömyys luo erittäin hyvät työkalut toteuttaa yleispäteviä algoritmejä ja funktioita, joita voidaan koodissa uudelleenkäyttää helposti. Esimerkiksi voidaan luoda funktio, joka järjestää erityyppisten alkioiden taulukon järjestykseen vaikka niin, että ensin tulee numerot pienimmästä suurimpaan ja sitten merkkijonot aakkosjärjestyksessä. Tämän tyylisten apufunktioiden luominen on yleistä JavaScriptissä, ja sitä pitäisi käyttää hyödykseen yhä enemmän.
 
 Imperatiivinen- vs. funktionaalinen ohjelmointi
 -----------------------------------------------
