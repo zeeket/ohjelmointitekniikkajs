@@ -31,7 +31,7 @@ Olioliteraalin luominen on helppoa, mutta se ei välttämättä sovi tilanteesee
 
 Esimerkkikoodissa on muuttujaan "apina" käytetty tarkoituksella const määrettä. Kyseisen määreen käyttö estää koodissa muuttujan "apina" uudelleen alustamisen. JS:n on tarkoitus olla joustavaa ja dynaamista, mutta mikäli muuttujaa ei tulla alustamaan uudestaan on const-määreen käyttö hyvä varotoimi. Vaikka se estää muuttujan alustuksen, on sen kenttiä vielä mahdollista poistaa, lisätä ja muokata. Näin ollen se ei riko JS:n perus ajatusta ja saattaa samalla säästää muutamalta virhetoiminnolta.
  
-Kieli tarjoaa myös muita tapoja olioiden luomiseen. Olioiden luonti voi tapahtua myös class määrettä käyttämällä (käytännössä sama kuin konstruktorifunnktion käyttö) ja tyhjän olion täytöllä. Konstruktori funktion käyttö on kuitenkin mielestämme selkein tapa luoda olioita javaScriptissä.
+Kieli tarjoaa myös muita tapoja olioiden luomiseen. Olioiden luonti voi tapahtua myös class määrettä käyttämällä (käytännössä sama kuin konstruktorifunnktion käyttö) ja tyhjän olion täytöllä. Konstruktori funktion käyttö on kuitenkin mielestämme selkein ja suositeltavin tapa luoda olioita javaScriptissä.
 
 
 Käyttö
