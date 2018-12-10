@@ -23,7 +23,4 @@ koodiesimerkkejä.
    Oliot
    olioohjelmointi
    
-Luettelot
-==================
 
-* :ref:`search`
