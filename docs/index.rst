@@ -8,6 +8,11 @@ Tervetuloa JavaScript Dokumentaatioon!
 
 Emil Heliste, Henri Helanen, Samu Tatti
 
+Tässä dokumentaatiossa käymme läpi tärkeitä ja hyödyllisiä käytäntöjä
+JavaScript ohjelmoinnissa. Annamme myös hieman yleistä rekvisiittaa JavaScriptin
+luonteesta ja ominaisuuksista. Pyrimme tarjoamaan sekä kattavia, että ytimekkäitä
+koodiesimerkkejä.
+
 .. toctree::
    :maxdepth: 2
    :caption: Sisällysluettelo:
@@ -18,9 +23,4 @@ Emil Heliste, Henri Helanen, Samu Tatti
    Oliot
    olioohjelmointi
    
-Luettelot
-==================
 
-* :ref:`genindex`
-* :ref:`modindex`
-* :ref:`search`

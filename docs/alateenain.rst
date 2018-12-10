@@ -1,8 +1,7 @@
-Sulkeumat
+Älä tee näin!
 ================================
 
-Sulkeumat ovat funktioita jotka säilyttävät tietoa. Sulkeumat mahdollistavat sellaisten muuttujien piilottamisen joita ei tarvita juuri tietyssä kohdassa ohjelman suoritusta.  
-Yleensä kun missä tahansa ohjelmointikielessä luodaan funktio, funktiolle annetaan joko parametrejä tai funktioon määritellään jonkinlaisia sisäisiä arvoja. JavaScriptissä sulkeuman saa helpoiten käyttämällä funktiota funktion sisällä ja suljuttamalla halutut muuttujat ensimmäiseen funktioon. **Tärkeää:** JavaScriptissä sisäisillä funtioilla on näkyvyys funktion ulkoiseen viittausympäristöön. Toisinsanoen sisältä nähdään ulos, muttei päinvastoin. Lohkot eivät myöskään ole näkyvyysalueita JavaScriptissä, toisin kuin Javassa. 
+lorem ipsum
 
 Sulkeuma säilyttää suorituksen jälkeiseen aikaan
 --------------------------------------------------------------------------------------
@@ -20,9 +19,9 @@ Vapaat muuttujat ovat muuttujia joita ei ole paikallisesti määritelty, eikä a
    write(laskuri); //tulostuu 1
    write(lisaa()); //tulostuu 3
 
-Määritellyt funktio päättyy, sulkeuma säilyy 
+otsikko   
 ------------------------------------------------------------------------------------------------
-Sulkeumaan suljetuttujen vapaiden muuttujien määritellyt funktio voi päättyä, mutta sulkeuma säilyy. Seuraavassa esimerkissä matalaHuutaja() ja kovaHuutaja() ovat kummatkin sulkeumia. teeHuutaja() luo funktioita jotka lisäävät halutun määrän huutomerkkejä huutoon- se tapahtuu ensin vaihtamalla kuinkaPaljon nimisen muuttuajan arvoa jonka jälkeen oikea määrä huutomerkkejä tallentuu sulkeumaan ja jää sellaisenaan funktion assosiaatiolistaan vaikka lisää huutajia luodaan::
+Sulkeumaan suljetuttujen vapaiden muuttujien määritellyt funktio voi päättyä, mutta sulkeuma säilyy. Seuraavassa esimerkissä matalaHuutaja() ja kovaHuutaja() ovat kummatkin sulkeumia. teeHuutaja() luo funktioita jotka lisäävät halutun määrän huutomerkkejä huutoon- se tapahtuu ensin vaihtamalla kuinkaPaljon nimisen muuttuajan arvoa jonka jälkeen  oikea määrä huutomerkkejä tallentuu sulkeumaan ja jää sellaisenaan funktion assosiaatiolistaan vaikka lisää huutajia luodaan::
 
     function teeHuutaja(){
     var huutomerkit = "!".repeat(kuinkaPaljon);
@@ -40,8 +39,6 @@ Sulkeumaan suljetuttujen vapaiden muuttujien määritellyt funktio voi päätty�
     write(kovaHuutaja("kova huuto")); //tulostuu KOVA HUUTO!!!!!
     write(matalaHuutaja("hiljaisempi huuto")); //tulostuu HILJAISEMPI HUUTO!
     write(kovaHuutaja("nyt")); //tulostuu NYT!!!!!
-
-
 
 Sulkeumat käytännössä
 -------------------------------------
