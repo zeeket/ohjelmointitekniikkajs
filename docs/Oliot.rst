@@ -28,17 +28,15 @@ Olioliteraalin luominen on helppoa, mutta se ei välttämättä sovi tilanteesee
   
   aatu makaki harmaa
   Moi!
-
-Esimerkkikoodissa on muuttujaan "apina" käytetty tarkoituksella const määrettä. Kyseisen määreen käyttö estää koodissa muuttujan "apina" uudelleen alustamisen. JS:n on tarkoitus olla joustavaa ja dynaamista, mutta mikäli muuttujaa ei tulla alustamaan uudestaan on const-määreen käyttö hyvä varotoimi. Vaikka se estää muuttujan alustuksen, on sen kenttiä vielä mahdollista poistaa, lisätä ja muokata. Näin ollen se ei riko JS:n perus ajatusta ja saattaa samalla säästää muutamalta virhetoiminnolta.
  
-Kieli tarjoaa myös muita tapoja olioiden luomiseen. Olioiden luonti voi tapahtua myös class määrettä käyttämällä (käytännössä sama kuin konstruktorifunnktion käyttö) ja tyhjän olion täytöllä. Konstruktori funktion käyttö on kuitenkin mielestämme selkein ja suositeltavin tapa luoda olioita javaScriptissä.
+Kieli tarjoaa myös muita tapoja olioiden luomiseen. Olioiden luonti voi tapahtua myös class määrettä käyttämällä (käytännössä sama kuin konstruktorifunnktion käyttö) ja tyhjän olion täytöllä. Konstruktori funktion käyttö on kuitenkin mielestämme selkein ja suositeltavin tapa kun olioille halutaan mahdollisesti rakentaa jonkinlaista perintää tai monimutkaisempaa toiminnallisuutta.
 
 
 Käyttö
 ------
 
 Kielen luonteesta johtuen luotuja olioita voi vääntää, kääntää ja muokata juuri niin paljon kun ikinä haluat. Tämä on hieno ominaisuus ja se mahdollistaa sellaisia toiminnallisuutta, mitä monilla jäykemmillä kielillä olisi hyvin vaikeaa tai jopa mahdotonta toteuttaa. Vapauden kanssa tulee kuitenkin olla varovainen ja javaScriptissä onkin järkevää käyttää jonkinlaista turvaverkkoa.
-Ensinnäkin ihan koodin yleisen siisteyden ja yhdenmukaisuuden nimissä olisi hyvä päättää vakio tapa sille miten olion kenttiin viitataan. Pistenotaatio on tietenkin helpoin ja siistein ratkaisu. Kuulosta hyvältä, mutta valitettavasti pistenotaatio ei aina toimi. kenttien/attribuuttien nimeämisessä voi harrastaa melkoista luovuutta ja hyväksyttäviä nimiä omvat mm. "", "peruna", 222 ja 1.2. Edellä mainituista pistenotaatiolla voi viitata ainoastaan "peruna" nimiseen kenttään. Tällaisissa tilanteissa olisi suositeltavaa käyttää aina toimivaa hakasulku ratkaisua::
+Ensinnäkin ihan koodin yleisen siisteyden ja yhdenmukaisuuden nimissä olisi hyvä päättää vakio tapa sille miten olion kenttiin viitataan. Pistenotaatio on tietenkin helpoin ja siistein ratkaisu. Kuulosta hyvältä, mutta valitettavasti pistenotaatio ei aina toimi. kenttien/attribuuttien nimeämisessä voi harrastaa melkoista luovuutta ja hyväksyttäviä nimiä ovat mm. "", "peruna", 222 ja 1.2. Edellä mainituista pistenotaatiolla voi viitata ainoastaan "peruna" nimiseen kenttään. Tällaisissa tilanteissa täytyy käyttää hakasulku ratkaisua::
 
   let olio = {
     1: 2,
@@ -51,6 +49,8 @@ Ensinnäkin ihan koodin yleisen siisteyden ja yhdenmukaisuuden nimissä olisi hy
   write(olio.4.5) // virhe
   write(olio[1]) tai write(olio["1"]) //2
   write(olio[4.5]) tai write(olio["4.5"]) //peruna 
+
+Kenttien nimeämisessä kannattaa kuitenkin käyttää selkeitä ja kuvailevia nimiä, joihin sitten voidaan viitata käyttäen siistimpää pistenotaatiota. 
 
 Dynaaminen kenttien muuttelu, poisto ja lisäys eivät aina ole välttämättä joillekkin olion kentille haluttua toiminnallisuutta ja jos jokin kenttä vaatii erityistä suojelua niin on se fiksua muuttaa ominaisuuksiltaan ei muokattavaksi. Mikään (lähes) ei ole lopullista javaScriptissä, joten jos myöhemmin tulee tarvetta sittenkin muuttaa kyseisen kentän arvoja tai poistaa kenttä kokonaan, voidaan muuttujan ominaisuuksia taas muuttaa::
 

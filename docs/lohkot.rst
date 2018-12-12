@@ -13,7 +13,7 @@ Lohko näkyvyysalueena
 
 var- avainsannalla asetetut muuttujat EIVÄT tottele lohkoa näkyvyysalueena. 
 let- ja const- avainsanoilla asetetut muuttujat sen sijaan saavat näkyvyysaluekseen sen lohkon missä ne sijaitsevat.
-Tämän takia var:in käyttöä tulisi välttää. Sen sijaan tulisi käytää let- ja const- sijoituksia.
+Tämän takia var:in käyttöä tulisi välttää. Sen sijaan tulisi käytää let- ja const- sijoituksia. Jos muuttujan uudestaan alustukselle ei ole mitään syytä niin on suositeltavaa käyttää const määrittelyä. Jos alustukselle on tarvetta niin let on hyvä vaihtoehto.
 
 Muista käyttää aaltosulkeita
 ------------------------------------------------------------------------------------------------
