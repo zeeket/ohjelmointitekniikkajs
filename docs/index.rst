@@ -18,6 +18,7 @@ koodiesimerkkejä.
    :caption: Sisällysluettelo:
 
    tyyppiTurvallisuus
+   lohkot
    algoritmitJaFunktiot
    sulkeumat
    Oliot

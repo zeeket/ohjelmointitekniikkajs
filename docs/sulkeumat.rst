@@ -4,7 +4,7 @@ Sulkeumat
 Sulkeumat ovat funktioita jotka säilyttävät tietoa. Sulkeumat mahdollistavat sellaisten muuttujien piilottamisen joita ei tarvita juuri tietyssä kohdassa ohjelman suoritusta.  
 Yleensä kun missä tahansa ohjelmointikielessä luodaan funktio, funktiolle annetaan joko parametrejä tai funktioon määritellään jonkinlaisia sisäisiä arvoja. JavaScriptissä sulkeuman saa helpoiten käyttämällä funktiota funktion sisällä ja suljuttamalla halutut muuttujat ensimmäiseen funktioon. **Tärkeää:** JavaScriptissä sisäisillä funtioilla on näkyvyys funktion ulkoiseen viittausympäristöön. Toisinsanoen sisältä nähdään ulos, muttei päinvastoin. Lohkot eivät myöskään ole näkyvyysalueita JavaScriptissä, toisin kuin Javassa. 
 
-Sulkeuma säilyttää suorituksen jälkeiseen aikaan
+Sulkeuman muuttujat suorituksen jälkeiseen aikaan
 --------------------------------------------------------------------------------------
 
 Vapaat muuttujat ovat muuttujia joita ei ole paikallisesti määritelty, eikä annettu funktiolle parametrinä. Seuraavassa esimerkissä nähdään miten sulkeumaan suljetut vapaat muuttujat säilyvät sulkeuman suorituksen jälkeiseen aikaan, sekä miten globaali näkyvyysalue ei näe funktion sillä olevaan paikalliseen näkyvyysalueeseen::
@@ -62,4 +62,5 @@ Esimerkiksi jos halutaan tehdä jotain jokaisella taulukon indeksillä, mutta ei
    for(var i=0;i<taulukko.length;i++){
       write(taulukko[i].data);
    }
+
 
