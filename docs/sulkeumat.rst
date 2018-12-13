@@ -2,7 +2,7 @@ Sulkeumat
 ================================
 
 Sulkeumat ovat funktioita jotka säilyttävät tietoa. Sulkeumat mahdollistavat sellaisten muuttujien piilottamisen joita ei tarvita juuri tietyssä kohdassa ohjelman suoritusta.  
-Yleensä kun missä tahansa ohjelmointikielessä luodaan funktio, funktiolle annetaan joko parametrejä tai funktioon määritellään jonkinlaisia sisäisiä arvoja. JavaScriptissä sulkeuman saa helpoiten käyttämällä funktiota funktion sisällä ja suljuttamalla halutut muuttujat ensimmäiseen funktioon. **Tärkeää:** JavaScriptissä sisäisillä funtioilla on näkyvyys funktion ulkoiseen viittausympäristöön. Toisinsanoen sisältä nähdään ulos, muttei päinvastoin. `Lohkot <lohkot>`_ eivät myöskään ole näkyvyysalueita JavaScriptissä, toisin kuin Javassa. 
+Yleensä kun missä tahansa ohjelmointikielessä luodaan funktio, funktiolle annetaan joko parametrejä tai funktioon määritellään jonkinlaisia sisäisiä arvoja. JavaScriptissä sulkeuman saa helpoiten käyttämällä funktiota funktion sisällä ja suljuttamalla halutut muuttujat ensimmäiseen funktioon. **Tärkeää:** JavaScriptissä sisäisillä funtioilla on näkyvyys funktion ulkoiseen viittausympäristöön. Toisinsanoen sisältä nähdään ulos, muttei päinvastoin. `Lohkot <lohkot.html>`_ eivät myöskään ole näkyvyysalueita JavaScriptissä, toisin kuin Javassa. 
 
 Sulkeuman muuttujat suorituksen jälkeiseen aikaan
 --------------------------------------------------------------------------------------
