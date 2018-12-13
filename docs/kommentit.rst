@@ -16,15 +16,14 @@ Eikä näin::
  
 Kun yhden rivin kommentti on keskellä lohkoa, se tulee erottaa rivinvaihdoilla. Kommentit ovat kuitenkin edelleen aina kohteen yläpuolella::
 
-function muista() {
-   write("painetaan mieleen");
+   function muista() {
+      write("painetaan mieleen");
 
-   //aseta muistettavaksi asiaksi vakiona muisto
-   const muistettava = this.muistettava || 'muisto';
+      //aseta muistettavaksi asiaksi vakiona muisto
+      const muistettava = this.muistettava || 'muisto';
 
-   return muistettava;
-}
-
+      return muistettava;
+   }
 
 Monen rivin kommentit
 -------------------------------------------------------------------------------------
