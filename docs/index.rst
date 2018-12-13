@@ -19,6 +19,7 @@ koodiesimerkkejä.
 
    tyyppiTurvallisuus
    lohkot
+   kommentit
    algoritmitJaFunktiot
    sulkeumat
    Oliot
