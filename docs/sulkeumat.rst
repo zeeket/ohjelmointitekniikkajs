@@ -63,4 +63,4 @@ Esimerkiksi jos halutaan tehdä jotain jokaisella taulukon indeksillä, mutta ei
       write(taulukko[i].data);
    }
 
-On myös tärkeää ymmärtää, että sulkeumien avulla toteutetaan yleisesti "kapselointi" rakenne/ kuvio. Kapselointi on tuttu olio-ohjelmoinnista "yksityisten" tai "piilotettujen" kenttien kautta, joita sitten muutetaan aksessorien kautta. Laskuri- esimerkissä laskurin sen hetkinen luku on kaseloitu sen sisälle.
+On myös tärkeää ymmärtää, että sulkeumien avulla toteutetaan yleisesti "kapselointi" rakenne/ kuvio. Kapselointi on tuttu olio-ohjelmoinnista "yksityisten" tai "piilotettujen" kenttien kautta, joita sitten muutetaan aksessorien kautta. Laskuri- esimerkissä laskurin sen hetkinen luku on kapseloitu sen sisälle.
